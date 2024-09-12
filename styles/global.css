@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main {
+  /* width: 100vw;
+  min-height: 100vh;
+  position: fixed;
+  display: flex; */
+  justify-content: center;
+  /* padding: 120px 24px 160px 24px; */
+  pointer-events: cursor;
+  color: white;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* .main:before {
+  background: radial-gradient(circle, rgba(2, 0, 36, 0) 0, #fafafa 100%);
+  position: absolute;
+  content: "";
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  top: 0;
+} */
+
+/* .main:after {
+  content: "";
+  background-image: url("/assets/images/grid.svg");
+  z-index: 1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0.4;
+  filter: invert(1);
+} */
+
+.gradient {
+  height: fit-content;
+  z-index: 3;
+  width: 100%;
+  max-width: 640px;
+  background-image: radial-gradient(
+      at 27% 37%,
+      hsla(215, 98%, 61%, 1) 0px,
+      transparent 0%
+    ),
+    radial-gradient(at 97% 21%, hsla(125, 98%, 72%, 1) 0px, transparent 50%),
+    radial-gradient(at 52% 99%, hsla(354, 98%, 61%, 1) 0px, transparent 50%),
+    radial-gradient(at 10% 29%, hsla(256, 96%, 67%, 1) 0px, transparent 50%),
+    radial-gradient(at 97% 96%, hsla(38, 60%, 74%, 1) 0px, transparent 50%),
+    radial-gradient(at 33% 50%, hsla(222, 67%, 73%, 1) 0px, transparent 50%),
+    radial-gradient(at 79% 53%, hsla(343, 68%, 79%, 1) 0px, transparent 50%);
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  filter: blur(100px) saturate(150%);
+  top: 80px;
+  opacity: 0.15;
+}
+
+.nav{
+  @apply flex justify-evenly items-center mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8
+}
+
+.card__style{
+  @apply w-80 h-72 md:w-full lg:w-80 lg:h-72 bg-gray-950 rounded-lg flex flex-col items-center justify-center
+}
+
+.cardData__style{
+  @apply flex flex-col items-center justify-center sm:flex-col md:flex-col lg:flex-row lg:space-x-4 sm:space-y-2
+}
+
+.cta_section{
+  @apply relative flex flex-col gap-6 items-center h-auto w-full
+}
+
+.cta_bg{
+  @apply absolute inset-0 bg-[url('/cta_bg.jpg')] bg-cover bg-center bg-no-repeat
+}
+
+.cardmorphism{
+  @apply rounded-xl border border-black bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-5 h-auto my-10 px-10 ;
+}
+
+.btn_primary{
+  @apply block w-full rounded border border-teal-600 bg-teal-600 mt-5 px-5 py-3 font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring mr-2
+}
+
+.input_text {
+  @apply bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur border border-black text-gray-200 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5
+}
+
+.primary_btn {
+  @apply block w-max rounded-md border border-teal-600 bg-teal-600 mt-5 px-5 py-3  text-white hover:bg-transparent hover:text-white mr-2
+}
+
+.transparent_btn {
+  @apply block w-max rounded-md border border-teal-600 bg-transparent mt-5 px-5 py-3  text-white hover:bg-transparent hover:text-white mr-2
+}
+
+.socials_icon {
+  @apply text-gray-700 transition hover:text-teal-600 dark:text-white dark:hover:text-teal-600
+}
+
+.about_main {
+  @apply items-center mx-auto max-w-screen-xl px-4 py-5 sm:px-6 lg:flex lg:h-screen lg:px-8 my-5 rounded-2xl bg-gray-900
+}
+
+
+
+
+
+
+
