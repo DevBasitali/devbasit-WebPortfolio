@@ -9,13 +9,7 @@ module.exports = {
   {
     extend: 
     {
-      backgroundImage: 
-      {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-        "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
-      },
-
+    
       colors: 
       {
         primary: {
@@ -33,14 +27,24 @@ module.exports = {
       },
     },
   },
-  
-  scrollBehavior:{
-    smooth: 'smooth'
 
+  padding: {
+    default: '1rem',   // default for mobile (p-4)
+    sm: '1.5rem',      // small screens (sm:p-6)
+    md: '2rem',        // medium screens (md:p-8)
+    lg: '2.5rem',      // large screens (lg:p-10)
   },
-  variants: {
-    scrollBehavior: ['responsive'],
+  margin: {
+    default: '1rem',   // default for mobile (m-4)
+    sm: '1.5rem',      // small screens (sm:m-6)
+    md: '2rem',        // medium screens (md:m-8)
+    lg: '2.5rem',      // large screens (lg:m-10)
   },
-
+  fontSize: {
+    base: '1rem',      // default font size for mobile (text-base)
+    sm: '1.125rem',    // small screens (sm:text-lg)
+    md: '1.25rem',     // medium screens (md:text-xl)
+    lg: '1.5rem',      // large screens (lg:text-2xl)
+  },
   plugins: [],
 };

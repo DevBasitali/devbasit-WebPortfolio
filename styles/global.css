@@ -112,6 +112,15 @@
   @apply items-center mx-auto max-w-screen-xl px-4 py-5 sm:px-6 lg:flex lg:h-screen lg:px-8 my-5 rounded-2xl bg-gray-900
 }
 
+.skill_sec{
+  @apply relative h-auto grid grid-rows-2 bg-gray-950
+}
+
+.skill_heading{
+  @apply flex justify-center
+}
+
+
 
 
 

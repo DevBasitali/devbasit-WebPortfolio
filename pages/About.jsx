@@ -14,7 +14,6 @@ function About() {
   const socials = DATA.aboutPage.socials;
   const contact = DATA.aboutPage.contact;
 
-
   return (
     <>
       <section id="About" className="relative flex flex-row bg-gray-950">
@@ -27,9 +26,9 @@ function About() {
               My name is {DATA.name}, I'm a passionate {DATA.role} proficient in
               crafting {DATA.experience}
               <strong className="text-teal-600">
-                (MongoDB, Express, React, Node.js)
+                (MongoDB, Express, React, Node.js).
               </strong>
-              . Beyond coding, I'm a {""}
+              Beyond coding, I'm a {""}
               <span className="text-gray-200 font-bold">
                 Social Media Expert {""}
               </span>
@@ -54,55 +53,23 @@ function About() {
             </div>
 
             <div className="grid grid-cols-1 gap-4 px-2 mt-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 ">
-              {Object.entries(DATA.aboutPage.contact).map(([value, index]) => (
-                <div key={index}>
-                  {value === "dob" && <Calendar size={15} className="mr-2"/>}
-                  {index === "email" && <Mail size={15} className="mr-2" />}
-                  {index === "phone" && <Phone size={15} className="mr-2" />}
-                  {index === "location" && <Map size={15} className="mr-2" />}
-                  <h1 className="text-gray-300">
-                  <span className="font-extrabold">
-                  {value.charAt(0).toUpperCase() + value.slice(1)}:
-                </span>{index}
-                  </h1>
+              {Object.entries(DATA.aboutPage.contact).map(([value, text]) => (
+                <div key={value}>
+                  <span className="flex items-center">
+                    {value === "dob" && <Calendar size={15} className="mr-2" />}
+                    {value === "email" && <Mail size={15} className="mr-2" />}
+                    {value === "phone" && <Phone size={15} className="mr-2" />}
+                    {value === "location" && <Map size={15} className="mr-2" />}
+                    <h1 className="text-gray-300 inline">
+                      <span className="font-extrabold">
+                        {value.charAt(0).toUpperCase() + value.slice(1)}:
+                      </span>
+                      {text}
+                    </h1>
+                  </span>
                 </div>
               ))}
             </div>
-
-            {/* <div className="grid grid-cols-1 gap-4 px-2 mt-10 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 ">
-
-              <div className=" flex flex-row items-center">
-                <Calendar size={15} className="mr-2" />
-                <h1 className="text-gray-300">
-                  <span className="font-extrabold">DOB:</span>{" "}
-                  {DATA.aboutPage.contact.dob}
-                </h1>
-              </div>
-
-              <div className=" flex flex-row items-center ">
-                <Mail size={15} className="mr-2" />
-                <h1 className="text-gray-300">
-                  <span className="font-extrabold">Email:</span>{" "}
-                  {DATA.aboutPage.contact.email}
-                </h1>
-              </div>
-
-              <div className=" flex flex-row items-center ">
-                <Phone size={15} className="mr-2" />
-                <h1 className="text-gray-300">
-                  <span className="font-extrabold">Phone:</span>{" "}
-                  {DATA.aboutPage.contact.phone}
-                </h1>
-              </div>
-
-              <div className=" flex flex-row items-center ">
-                <Map size={15} className="mr-2" />
-                <h1 className="text-gray-300">
-                  <span className="font-extrabold">Location:</span>{" "}
-                  {DATA.aboutPage.contact.location}
-                </h1>
-              </div>
-            </div> */}
 
             <div>
               <ul className="my-8 flex justify-center gap-6 md:gap-8">
@@ -133,7 +100,7 @@ function About() {
             </div>
           </div>
         </div>
-        
+
         <div className="flex items-center justify-center mx-auto max-w-screen-xl">
           <Image
             src={DATA.aboutPage.aboutImg}

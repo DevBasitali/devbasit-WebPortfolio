@@ -1,7 +1,4 @@
-
-
 export const DATA = {
-
   name: "Basit ali",
   role: "MERN Stack Developer",
   experience: "dynamic web applications using the MERN stack",
@@ -17,7 +14,7 @@ export const DATA = {
       phone: "+92 313 5359 605",
       location: "Islamabad, Pakistan",
     },
-    
+
     socials: {
       github: {
         name: "Github",
@@ -30,6 +27,42 @@ export const DATA = {
       mail: {
         name: "Email",
         url: "mailto:ibasitaliraja@gmail.com",
+      },
+    },
+  },
+
+  skillsPage: {
+    skilldata: {
+      backend: {
+        icon: [
+          "/backend/nodejs.svg",
+          "/backend/express.svg",
+          "/backend/php.svg",
+          "/backend/mongodb.svg",
+          "/backend/mysql.svg",
+        ],
+      },
+      frontend: {
+        icon: [
+          "/frontend/javascript.svg",
+          "/frontend/reactjs.svg",
+          "/frontend/nextjs.svg",
+          "/frontend/tailwind.svg",
+          "/frontend/css.svg",
+          "/frontend/html.svg",
+        ],
+      },
+      tools: {
+        icon: [
+          "/tools/github.svg",
+          "/tools/versioncontrol.svg",
+          "/tools/vscode.svg",
+          "/tools/cmdline.svg",
+          "/tools/terminal.svg",
+        ],
+      },
+      languages: {
+        icon: ["/languages/english.svg", "/languages/urdu.svg", "/languages/hindi.svg"],
       },
     },
   },
