@@ -8,7 +8,7 @@ const [name, setName]=useState('');
 const [email, setEmail]=useState('');
 const [msg, setMsg]=useState('');
 const [alert, setAlert]=useState(null)
-// console.log(name + email + msg);
+
 const handleSubmit=async(e)=>{
 e.preventDefault();
 try {
@@ -17,11 +17,11 @@ try {
     headers: {
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify({ name,email, msg }), // Sending the name to the API
+    body: JSON.stringify({ name,email, msg }),
   });
 
   const data = await res.json();
-  // setResponse(data.message);
+
   console.log(data)
   if (data.message) {
     setAlert(data.message);
@@ -49,7 +49,7 @@ try {
         className="-z-10"
       />
       
-        <div className="cardmorphism w-2/6">
+        <div className="cardmorphism w-[30%]">
           <form 
           onSubmit={handleSubmit}
           >
@@ -62,7 +62,7 @@ try {
             <input
               type="text"
               id="fullname"
-              // value={fullname}
+              
               onChange={(e) => setName(e.target.value)}
               className="input_text"
             />
@@ -75,7 +75,7 @@ try {
             <input
               type="email"
               id="email"
-              // value={email}
+              
               onChange={(e) => setEmail(e.target.value)}
               className="input_text"
             />
@@ -89,15 +89,14 @@ try {
             <textarea
               id="message"
               placeholder="Enter your message here"
-              // value={message}
               onChange={(e) => setMsg(e.target.value)}
               className="input_text w-full"
               rows={4}
             />
-            {alert && <Alert title="Form Submitted" desc={alert}/>}
+            {alert && <Alert title="Sucess" desc={alert}/>}
 
             <button
-              // type="submit"
+              
               className="btn_primary active:text-opacity-75 sm:w-auto text-md" 
             >
               Send Message

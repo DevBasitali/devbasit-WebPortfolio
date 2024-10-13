@@ -16,21 +16,22 @@ import User from "@/models/user";
 
 export default async function handler(req, res) {
   if (req.method === 'POST') {
-    // Extract data from request body
+
     const { name, email, msg } = req.body;
 
     try {
-      // Connect to the database
+
       await connectToDB();
 
-      // Create a new User document
-      const newUser = new User({username:name, email:email, message:msg });
+        const existingUser = await User.findOne({email});
+        if (existingUser) {
+          return res.status(400).json({ message: 'Email already exists' });
+        }
 
-      // Save the user to the database
+      const newUser = new User({username:name, email:email, message:msg });
       await newUser.save();
 
-      // Respond with success
-      res.status(201).json({ message: 'Data saved successfully!' });
+      res.status(201).json({ message: 'success' });
     } catch (error) {
       console.error('Error saving data:', error);
       res.status(500).json({ message: 'Internal Server Error' });

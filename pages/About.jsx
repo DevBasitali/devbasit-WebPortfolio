@@ -94,8 +94,7 @@ function About() {
                         </svg>
                       </a>
                     </li>
-                  )
-                )}
+                  ))}
               </ul>
             </div>
           </div>

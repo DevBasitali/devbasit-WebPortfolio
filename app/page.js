@@ -5,7 +5,7 @@ import Services from "@/pages/Services";
 import Skill from "@/pages/Skill";
 import Projects from "@/pages/Projects";
 import Testimonal from "@/pages/Testimonal";
-import CTA from '@/pages/CTA';
+import Contact from '@/pages/Contact';
 
 
 
@@ -18,7 +18,7 @@ export default function Home() {
       <Skill />
       <Projects/>
       <Testimonal/>
-      <CTA/>
+      <Contact/>
     </div>
   );
 }

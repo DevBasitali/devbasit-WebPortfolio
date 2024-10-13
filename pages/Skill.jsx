@@ -1,7 +1,10 @@
+
 import { DATA } from "../dashboard/userData";
+import Image from "next/image";
+import IconCloud from "@/components/skillsSlug"
 
 function Skill() {
-  const skilldata = DATA.skillsPage.skilldata;
+  const skillsPage = DATA.skillsPage;
 
   return (
     <>
@@ -16,26 +19,26 @@ function Skill() {
               quality and performance.
             </p>
           </div>
+          <skillsSlug/>
         </div>
 
-        {Object.entries(DATA.skillsPage.skilldata).map(
-          ([category, section]) => (
-            <div className=" justify-center items-center flex gap-4">              
-              
-              
-                {section.icon.map((icon, index) => (
-                  <img
-                    key={index}
-                    src={icon}
-                    alt={`${category} icon`}
-                    width={120}
-                    height={120}
-                  />
-                ))}
-              
-            </div>
-          )
-        )}
+        
+
+        {/* {Object.entries(DATA.skillsPage).map(([key, value]) => (
+          <div
+            key={key}
+            className="flex justify-center"
+          >
+            {value.Img.map((img, index) => (
+              <Image
+              key={index} 
+              src={img} alt={key}
+              width={70}
+              height={70}
+              />
+            ))}
+          </div>
+        ))} */}
 
         {/* <div className="flex flex-wrap items-center justify-center gap-5">
             <div className="w-40 h-40">
