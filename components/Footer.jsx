@@ -6,7 +6,7 @@ import { MailIcon } from "lucide-react";
 function Footer() {
   return (
     <>
-      <footer className="bg-gray-100 dark:bg-gray-950">
+      <footer className="bg-gray-950 dark:bg-gray-950">
         <div className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
           <div className="flex justify-center text-teal-600 dark:text-teal-300 font-bold text-2xl tracking-wider">
             Dev Basit Ali.

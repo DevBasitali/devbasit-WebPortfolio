@@ -15,10 +15,10 @@ function Testimonal() {
             >
               <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z" />
             </svg>
-            <span className="mb-8 font-thin text-gray-500">
+            <span className="mb-8 font-thin text-teal-600">
               Huzaifa Afraz | TopDesizn CEO <span>.</span> 24 July 2024 {" "} via LinkedIn
             </span>
-            <p className="mt-5">
+            <p className="mt-5 text-gray-400">
             I highly recommend Basit Ali, a strong MERN stack developer with excellent problem-solving skills. Basit has proven his ability to build robust, scalable web applications. He demonstrates proficiency in React, Node.js, Express.js, and MongoDB. His technical expertise and dedication make him a valuable asset to any team.
             </p>
           </blockquote>

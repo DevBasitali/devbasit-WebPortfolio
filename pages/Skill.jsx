@@ -1,19 +1,19 @@
-import OrbitingCircles from "@/components/ui/orbiting-circles";
+// import OrbitingCircles from "@/components/ui/orbiting-circles";
 import { DATA } from "../dashboard/userData";
 import Image from "next/image";
 
-import IconCloud from "@/components/ui/icon-cloud";
+// import IconCloud from "@/components/ui/icon-cloud";
 
 function Skill() {
   const skillsPage = DATA.skillsPage;
 
   return (
     <>
-      <section id="Skill" className="skill_sec">
-        <div className="skill_heading my-10">
-          <div className="max-w-xl text-center ">
+      <section id="Skill" className="relative h-screen grid grid-rows-2 bg-gray-950 sm:h-screen lg:h-auto">
+        <div className="hidden lg:flex lg:justify-center lg:items-center">
+         <div className="max-w-xl text-center">
             <h1 className="text-xl font-extraboldtext-white sm:text-xl md:text-4xl lg:text-5xl">
-              Skills.
+              EXPERIENCE.
             </h1>
             <p className="text-sm mt-4 ml-5 max-w-lg text-gray-300 sm:text:md md:text-xl lg:text-xl tracking-wide">
               I create professional, user-friendly applications with a focus on
@@ -21,9 +21,12 @@ function Skill() {
             </p>
           </div>
         </div>
-        <div className="mb-5">
+        <div className="mb-3">
           {Object.entries(DATA.skillsPage).map(([key, value]) => (
-            <div key={key} className="relative flex flex-row justify-center">
+            <div
+              key={key}
+              className="flex flex-wrap justify-center items-center gap-4 sm:grid sm:grid-cols-2 lg:flex lg:flex-row"
+            >
               {value.Img.map((img, index) => (
                 <Image
                   key={index}
@@ -42,31 +45,3 @@ function Skill() {
 }
 
 export default Skill;
-
-{
-  /* */
-}
-
-{
-  /* <div className="flex flex-wrap items-center justify-center gap-5">
-            <div className="w-40 h-40">
-              <img src="/backend/mongodb.svg" alt="MongoDB" />
-            </div>
-            <div className="w-40 h-40">
-              <img src="/backend/express.svg" alt="Express" />
-            </div>
-            <div className="w-40 h-40">
-              <img src="/frontend/reactjs.svg" alt="React" />
-            </div>
-            <div className="w-40 h-40">
-              <img src="/backend/nodejs.svg" alt="Node.js" />
-            </div>
-          </div> */
-}
-
-{
-  /* <IconCloud /> */
-}
-{
-  /* <OrbitingCircles/> */
-}
