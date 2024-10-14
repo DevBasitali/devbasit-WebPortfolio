@@ -85,7 +85,7 @@
 }
 
 .cardmorphism{
-  @apply rounded-xl border border-black bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-5 h-auto my-10 px-10 ;
+  @apply rounded-xl border border-t-black bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-5 h-auto my-10 px-10 ;
 }
 
 .btn_primary{

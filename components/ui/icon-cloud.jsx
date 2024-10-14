@@ -1,4 +1,4 @@
-"use client";
+"use client";;
 import { useEffect, useMemo, useState } from "react";
 import { useTheme } from "next-themes";
 import { Cloud, fetchSimpleIcons, renderSimpleIcon } from "react-icon-cloud";
@@ -10,7 +10,7 @@ export const cloudProps = {
       justifyContent: "center",
       alignItems: "center",
       width: "100%",
-      paddingTop: 40,
+      // paddingTop: 40,
     },
   },
   options: {

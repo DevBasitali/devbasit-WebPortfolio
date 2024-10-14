@@ -9,9 +9,6 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/react": "^11.13.3",
-    "@emotion/styled": "^11.13.0",
-    "@mui/material": "^6.0.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "codemon": "^0.1.31-development",

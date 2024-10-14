@@ -1,7 +1,3 @@
-
-
-
-
 export const DATA = {
   name: "Basit ali",
   role: "MERN Stack Developer",
@@ -36,40 +32,23 @@ export const DATA = {
   },
 
   skillsPage: {
-      // backend: {
-      //   Img: [
-      //     "/backend/nodejs.svg",
-      //     "/backend/express.svg",
-      //     "/backend/php.svg",
-      //     "/backend/mongodb.svg",
-      //     "/backend/mysql.svg",
-      //   ],
-      // },
-      frontend: {
-        Img: [
-          "/frontend/javascript.svg",
-          "/frontend/reactjs.svg",
-          "/frontend/nextjs.svg",
-          "/frontend/tailwind.svg",
-          "/frontend/css.svg",
-          "/frontend/html.svg",
-        ],
-      },
-      tools: {
-        Img: [
-          "/tools/github.svg",
-          "/tools/versioncontrol.svg",
-          "/tools/vscode.svg",
-          "/tools/cmdline.svg",
-          "/tools/terminal.svg",
-        ],
-      },
-      languages: {
-        Img: [
-          "/languages/english.svg",
-          "/languages/urdu.svg",
-          "/languages/hindi.svg"
-        ],
-      },
+    frontend: {
+      Img: [
+        "/frontend/javascript.svg",
+        "/frontend/reactjs.svg",
+        "/frontend/nextjs.svg",
+        "/frontend/tailwind.svg",
+        "/frontend/css.svg",
+      ],
     },
+    backend: {
+      Img: [
+        "/backend/nodejs.svg",
+        "/backend/express.svg",
+        "/backend/php.svg",
+        "/backend/mongodb.svg",
+        "/backend/mysql.svg",
+      ],
+    },
+  },
 };
