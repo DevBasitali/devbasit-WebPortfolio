@@ -1,7 +1,7 @@
 export const DATA = {
-  name: "Basit ali",
-  role: "MERN Stack Developer",
-  experience: "dynamic web applications using the MERN stack",
+  name: "Basit Ali",
+  role: "MERN STACK DEVELOPER",
+  experience: "Dynamic web applications using the MERN stack",
   heroBg: "/backgrounds/heroBg.svg",
   cvLink:
     "https://drive.google.com/file/d/1N-exFO5TJeymBDBSzKdcUCNzofZsHWWb/view?usp=drive_link",

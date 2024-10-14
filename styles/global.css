@@ -85,7 +85,7 @@
 }
 
 .btn_primary{
-  @apply block w-full rounded border border-teal-600 bg-teal-600 mt-5 px-5 py-3 font-medium text-white hover:bg-transparent hover:text-white focus:outline-none focus:ring mr-2
+  @apply block w-full rounded border border-teal-600 bg-teal-600 mt-5 px-5 py-3 font-medium text-black hover:bg-transparent hover:text-white focus:outline-none focus:ring mr-2
 }
 
 .input_text {
@@ -93,7 +93,7 @@
 }
 
 .primary_btn {
-  @apply block w-max rounded-md border border-teal-600 bg-teal-600 mt-5 px-5 py-3  text-white hover:bg-transparent hover:text-white mr-2
+  @apply block w-max rounded-md border border-teal-600 bg-teal-600 mt-5 px-5 py-3  text-black hover:bg-transparent hover:text-white mr-2
 }
 
 .transparent_btn {
