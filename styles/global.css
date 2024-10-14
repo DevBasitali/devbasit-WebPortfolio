@@ -41,7 +41,7 @@
 
 .gradient {
   height: fit-content;
-  z-index: 3;
+  /* z-index: 3; */
   width: 100%;
   max-width: 640px;
   background-image: radial-gradient(
@@ -80,12 +80,8 @@
   @apply relative flex flex-col gap-6 items-center h-auto w-full
 }
 
-.cta_bg{
-  @apply absolute inset-0 bg-[url('/cta_bg.jpg')] bg-cover bg-center bg-no-repeat
-}
-
 .cardmorphism{
-  @apply rounded-xl border border-t-black bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-5 h-auto my-10 px-10 ;
+  @apply rounded-xl bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur p-5 h-auto my-10 px-10 ;
 }
 
 .btn_primary{
