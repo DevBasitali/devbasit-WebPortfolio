@@ -93,7 +93,7 @@
 }
 
 .primary_btn {
-  @apply block w-max rounded-md border border-teal-600 bg-teal-600 mt-5 px-5 py-3  text-black hover:bg-transparent hover:text-white mr-2
+  @apply block w-max  border border-teal-600 bg-teal-600 mt-5 px-5 py-3  text-black hover:bg-transparent hover:text-white mr-2
 }
 
 .transparent_btn {

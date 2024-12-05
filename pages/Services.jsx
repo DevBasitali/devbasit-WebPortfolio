@@ -3,19 +3,19 @@ import Card from "@/components/Card";
 function Services() {
   const cardData = [
     {
-      Img: "/CSS.png",
+      Img: "/frontend/css.svg",
       title: "Web Development",
       desc: "Offering custom, high-quality web and mobile app development services.",
     },
 
     {
-      Img: "/flutter.png",
+      Img: "/frontend/nextjs.svg",
       title: "App Development",
       desc: "Offering custom, Dynamic high-quality mobile and web app development services. ",
     },
 
     {
-      Img: "/github.png",
+      Img: "/frontend/reactjs.svg",
       title: "Maintinence & Support",
       desc: "Offering reliable maintenance, support, and custom web and mobile development.",
     },
