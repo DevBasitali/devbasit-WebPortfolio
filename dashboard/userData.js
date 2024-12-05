@@ -3,6 +3,8 @@ export const DATA = {
   role: "MERN STACK DEVELOPER",
   experience: "Dynamic web applications using the MERN stack",
   heroBg: "/backgrounds/heroBg.svg",
+  heroImg: "/backgrounds/heroBg.jpg",
+  heroPc: "/backgrounds/heroPc.jpg",
   basit: "/basit.png",
   cvLink:
     "https://drive.google.com/file/d/1N-exFO5TJeymBDBSzKdcUCNzofZsHWWb/view?usp=drive_link",

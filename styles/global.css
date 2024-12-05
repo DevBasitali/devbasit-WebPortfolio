@@ -88,6 +88,10 @@
   @apply block w-full rounded border border-teal-600 bg-teal-600 mt-5 px-5 py-3 font-medium text-black hover:bg-transparent hover:text-white focus:outline-none focus:ring mr-2
 }
 
+.btn_primary2{
+  @apply block w-full rounded border border-teal-700 bg-teal-700 px-12 py-3 text-sm font-medium text-black hover:bg-transparent hover:text-white focus:outline-none focus:ring active:text-opacity-75 sm:w-auto
+}
+
 .input_text {
   @apply bg-white/20 shadow-[inset_10px_-50px_94px_0_rgb(199,199,199,0.2)] backdrop-blur border border-black text-gray-900 text-sm focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5
 }
